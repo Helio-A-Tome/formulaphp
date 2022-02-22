@@ -14,7 +14,7 @@ echo md5($senha);
 }else{
 echo "favor preencher todos os dados";
 }
-
+echo '<pre>'
 $permitidos = ['image/jpg', 'image/png', 'image/gif', 'image/jpeg'];
 
 if(in_array($_FILES['arquivo']['type'],$permitidos)){
