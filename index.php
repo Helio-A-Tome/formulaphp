@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="formu">
-    <form method="POST" action="enviar.php" enctype="multpart/form-data">
+    <form method="POST" action="enviar.php" enctype="multipart/form-data">
     <label for="">
     Nome:
     <input type="text" name="nome" id="">
@@ -20,7 +20,7 @@
     Senha:<input type="password" name="senha" id="">
     </label><br/><br/>
     <label for="">
-    Documentos:<input type="file" name="arquivos">
+    Documentos:<input type="file" name="arquivo">
     
     </label><br/><br/>
     <input type="submit" value="enviar">
