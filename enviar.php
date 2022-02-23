@@ -12,6 +12,7 @@ echo $nome. "<br/>";
 echo $email. "<br/>";
 echo md5($senha);
 }else{
+echo "<br/>";
 echo "favor preencher todos os dados";
 }
 echo '<pre>';
