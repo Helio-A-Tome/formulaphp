@@ -4,11 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <title>formulario em php</title>
 </head>
 <body>
+<header>
+<h1>Simples formulario em PHP</h1>
+<nav>
+<ul>
+<li>
+</li>
+</ul>
+</nav>
+</header>
+<section>
+<div class="sessao">
+</div>
+</section>
     <div class="formu">
-    <form method="POST" action="enviar.php" enctype="multpart/form-data">
+    <form method="POST" action="enviar.php" enctype="multipart/form-data">
     <label for="">
     Nome:
     <input type="text" name="nome" id="">
@@ -20,12 +34,25 @@
     Senha:<input type="password" name="senha" id="">
     </label><br/><br/>
     <label for="">
-    Documentos:<input type="file" name="arquivos">
+    Documentos:<input type="file" name="arquivo">
     
     </label><br/><br/>
     <input type="submit" value="enviar">
     </form>
+    <div id="hora"></div>
     </div>
-    <div>este é um rodape</div>
+    <footer> <div>este é um rodape</div></footer>
+    <script "type=text/javascript">
+   var dt = new Date()
+  var mili = dt.getMilliseconds()
+   // hr = new Date
+    //sc = new Date
+var mostraHora = document.getElementById("hora").innerHTML= 
+dt.getHours()+":"+ dt.getMinutes()+":"+ dt.getSeconds()+ ":"+ mili
+
+
+
+
+</script>
 </body>
 </html>

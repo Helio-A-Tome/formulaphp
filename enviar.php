@@ -27,3 +27,4 @@ echo "arquivo enviado com sucesso";
 }else{
 echo 'falha ao enviar arquivo';
 }
+?>
