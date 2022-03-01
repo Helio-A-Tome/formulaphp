@@ -4,3 +4,8 @@
     margin: 0;
     padding: 0;
 }
+#hora{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

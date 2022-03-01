@@ -5,6 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
+    <style>
+        .rel{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color:green;
+    width: 120px;
+    background-color: #000;
+
+}
+    </style>
     <title>formulario em php</title>
 </head>
 <body>
@@ -39,20 +51,38 @@
     </label><br/><br/>
     <input type="submit" value="enviar">
     </form>
-    <div id="hora"></div>
+    <div ><br/>
+    <br/>
+    <input type="text"  id="hora" class="rel" > </div>
     </div>
     <footer> <div>este é um rodape</div></footer>
-    <script "type=text/javascript">
-   var dt = new Date()
-  var mili = dt.getMilliseconds()
-   // hr = new Date
-    //sc = new Date
-var mostraHora = document.getElementById("hora").innerHTML= 
-dt.getHours()+":"+ dt.getMinutes()+":"+ dt.getSeconds()+ ":"+ mili
 
+    <!--estilo Relogio-->
 
+    <script type="text/javascript">
+   function relogio(){
+       var data = new Date()
+       var hor = data.getHours()
+       var min = data.getMinutes()
+       var seg = data.getSeconds()
 
+       if(hor < 10){
 
+        hor = "0" + hor
+
+       }
+       if(min < 10){
+           min = "0" + min
+       }
+       if(seg < 10){
+           seg = "0" + seg
+       }
+
+       var horas = hor + ":" + min +":"+ seg
+       var hora = document.getElementById("hora").value =horas
+
+   }
+   var tempo =setInterval(relogio, 1000)
 </script>
 </body>
 </html>
